@@ -1,0 +1,13 @@
+/* *{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+.container{
+    background-image: url('src/assets/images/nature.jpeg');
+    background-repeat: no-repeat;
+}
+.container p{
+    background-color: blue;
+}
