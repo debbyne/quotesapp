@@ -1,21 +1,39 @@
 <div class="container-fluid">
-    <div class="form-input">
+  <div class="form-input">
     <h1 id="add_quote">
-        Add new quote <hr>
+      Add new quote
+      <hr />
     </h1>
-    <form   (ngSubmit)="submitQuote()" #quoteForm="ngForm" >
-        <label for="name">Quote:</label><br>
-        <input type="text" name="quote" id="quote"  [(ngModel)]="newQuote.quote" #quote="ngModel" ><br>
+    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
+      <label for="name">Quote:</label><br />
+      <input
+        type="text"
+        name="quote"
+        id="quote"
+        [(ngModel)]="newQuote.quote"
+        #quote="ngModel"
+      /><br />
 
-        <label for="name">Concoctor:</label><br>
-        <input type="text" name="concoctor" id="concoctor"  [(ngModel)]="newQuote.concoctor" #concoctor="ngModel"  ><br>
+      <label for="name">Concoctor:</label><br />
+      <input
+        type="text"
+        name="concoctor"
+        id="concoctor"
+        [(ngModel)]="newQuote.concoctor"
+        #concoctor="ngModel"
+      /><br />
 
-        <label for="name">Author:</label><br>
-        <input type="text" name="author" id="author"   [(ngModel)]="newQuote.author" #author="ngModel"  ><br><br>
-        <hr>
+      <label for="name">Author:</label><br />
+      <input
+        type="text"
+        name="author"
+        id="author"
+        [(ngModel)]="newQuote.author"
+        #author="ngModel"
+      /><br /><br />
+      <hr />
 
-        <button>ADD</button>
-
+      <button>ADD</button>
     </form>
-</div>
+  </div>
 </div>
