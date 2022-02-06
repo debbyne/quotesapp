@@ -9,7 +9,7 @@ import { QuoteClass } from '../quote-class';
 export class QuoteComponent implements OnInit {
 
   myQuotes:QuoteClass[] = [
-    new QuoteClass(0,"quote1","author0","concoctor0",0,0,new Date(2020,2,1)),
+    new QuoteClass(0,"The time is always right to do what is right.","Martin L.K.J","Sterling",0,0,new Date(2020,2,1)),
     new QuoteClass(1,"quote2","author1","concoctor1",0,0,new Date(2015,4,3)),
     new QuoteClass(2,"quote2","author2","concoctor2",0,0,new Date(2018,4,9))
 
