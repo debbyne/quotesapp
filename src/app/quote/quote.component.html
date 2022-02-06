@@ -1,19 +1,23 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <app-form   (addQuote)="addNewQuote($event)" ></app-form>
-      </div>
-      <div class="col-md-6">
-        <div class="quotes-list">
-            <h1>My Quotes</h1><hr>
+  <div class="row">
+    <div class="col-md-6">
+      <app-form (addQuote)="addNewQuote($event)"></app-form>
+    </div>
+    <div class="col-md-6">
+      <div class="quotes-list">
+        <h1>My Quotes</h1>
+        <hr />
         <ol>
-            <li *ngFor = "let quote of myQuotes; let i = index" >  
-                <h2>{{quote.author}}</h2>
-                <p>{{quote.quote}}</p>
-                <app-quote-details [quote]='quote' (deleteThis)="deleteMe($event, i)" ></app-quote-details>
-            </li>
+          <li *ngFor="let quote of myQuotes; let i = index">
+            <h2>{{ quote.author }}</h2>
+            <p>{{ quote.quote }}</p>
+            <app-quote-details
+              [quote]="quote"
+              (deleteThis)="deleteMe($event, i)"
+            ></app-quote-details>
+          </li>
         </ol>
-        </div>
       </div>
     </div>
   </div>
+</div>
