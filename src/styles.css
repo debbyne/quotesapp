@@ -3,8 +3,13 @@
 
 *{
     font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 body{
-    background-image: url('images/nature.jpeg');
+    background-image: url('/assets/images/nature.jpeg');
+    opacity: 0.9;
+}
+.overlay{
+        background: rgb(0, 0, 0, .5);
 }
