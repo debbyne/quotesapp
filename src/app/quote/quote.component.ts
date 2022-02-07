@@ -28,9 +28,9 @@ export class QuoteComponent implements OnInit {
     ),
     new QuoteClass(
       2,
-      'quote2',
-      'author2',
-      'concoctor2',
+      'Never trust a big peach and a smile',
+      'Lucia',
+      'Germano',
       0,
       0,
       new Date(2018, 4, 9)

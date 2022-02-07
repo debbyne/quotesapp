@@ -3,3 +3,6 @@ button{
     border: none;
     border-radius: 4px;
 }
+#upvote,#downvote,#delete{
+    margin-left: 25px;
+}

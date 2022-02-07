@@ -2,6 +2,6 @@
 <p>{{quote.concoctor}}</p>
 <p>Added {{quote.date | dateCounter}} days ago.</p>
 <hr>
-<button  (click)="AddUpvote()">Upvotes:{{quote.upvotes}}</button>
-<button (click)="AddDownvote()" >Downvotes:{{quote.downvotes}}</button>
-<button (click)="deleteMe(true)" >Delete</button>
+<button id="upvote" (click)="AddUpvote()" class="bg-warning">Upvotes: {{quote.upvotes}}</button>
+<button  id="downvote" (click)="AddDownvote()" class="bg-secondary" >Downvotes: {{quote.downvotes}}</button>
+<button  id="delete" (click)="deleteMe(true)"  class="bg-danger" >Delete</button>
