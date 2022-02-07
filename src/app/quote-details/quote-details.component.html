@@ -1,6 +1,6 @@
 
 <p>{{quote.concoctor}}</p>
-<p>{{quote.date}}</p>
+<p>Added {{quote.date | dateCounter}} days ago.</p>
 <hr>
 <button  (click)="AddUpvote()">Upvotes:{{quote.upvotes}}</button>
 <button (click)="AddDownvote()" >Downvotes:{{quote.downvotes}}</button>
