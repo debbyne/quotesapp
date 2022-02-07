@@ -5,3 +5,6 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+body{
+    background-image: url('images/nature.jpeg');
+}
